@@ -8,10 +8,12 @@
  
 5. Since you're opening a screen, drag the **Control** block `open another screen screenName` into the **Procedure** block.
 
-6. This procedure is going to work for multiple minigames. (Don't worry about only having one minigame. I'll show you how to make some more later). For now you an drag the `initalize global [name] to` block from **Variables** on to the **Viewer**. Change "name" to "numberOfGames" (this helps you remeber what the variable is for). Just drag the `[0]` block onto end of the variable and change 0 to 1 and this variable is ready to go!
+6. This procedure is going to work for your multiple minigames. Drag the `initalize global [name] to` block from **Variables** on to the **Viewer**. Change "name" to "numberOfGames" (this helps you remember what the variable is for). Just drag the `[0]` block onto end of the variable and change 0 to 2 (this is the number of minigames you have so far) and this variable is ready to go!
 
  * It should look like this:
  ![](/assets/globalVariable.png)
  
-7. The last step is choosing a screen to open! Remember what the name of the screen for the first minigame was? Minigame1. To make things more interesting lets randomly  
+7. The last step is choosing a screen to open! Remember what the name of the screen for the first two minigames were? Minigame1 and Minigame2. This allows you to easily choose a random screen. Randomness will make your app feel different everytime.
+
+8. To choose a random minigame you need 3 blocks: `join` block from **Text** (puts two texts together), `random integer from [1] to [100]` block from **Math**, and   `get[]`from **Variables**. Put them together so they look like this:
  
