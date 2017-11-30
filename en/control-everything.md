@@ -24,7 +24,7 @@
 
    ![](/assets/won.png)
 
-9. If they lost, it saves their score to the file and opens the home screen. Here's how the blocks look:
+9. If they lost, it saves their score to the file and opens the home screen. To add the score to the player file use the `call File1.AppendToFile` block. Then you want to open the home screen Here's how the blocks look:
 
    ![](/assets/lost.png)
 
