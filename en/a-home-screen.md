@@ -20,7 +20,8 @@
 
 7. You'll make the scoring display later, don't worry about it right now. Get the **When [button] .Click** code block and put two **call [TinyDB] .StoreValue** code blocks inside of it.
 
- 8. Add a blank **Text** block to the tag of the first **.StoreValue** block. Put "name" in the **Text** block. To get user input, the block you need will be under the **TextBox** and looks like this: ![](/assets/text.png) 
+ 8. Add a blank **Text** block to the tag of the first **.StoreValue** block. Put "name" in the **Text** block. To get user input, the block you need will be under the **TextBox** and looks like this: 
+ ![](/assets/text.png) 
  That's it! You just stored the users input in a database.
  
 9.To finish up the block 
