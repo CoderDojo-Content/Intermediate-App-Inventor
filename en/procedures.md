@@ -4,7 +4,7 @@
 
 3. Now, open up the blocks page for the screen. You're going to make your first procedure! A procedure is a bit of code that you can use with its "call" block. Most of the time coders will use these blocks so that they don't need to create the same code twice \(or even more\). These are the blocks we will use:
 
-   ![](/assets/procedures.png)
+   ![](en/assets/procedures.png)
 
 4. Click **Procedures** on the left of the screen and drag over the `to [procedure]` block. You're going to open you minigames with this procedure, so to help remember what this procedure does you can rename it "openMinigame".
 
@@ -14,13 +14,13 @@
 
    * It should look like this:
 
-     ![](/assets/globalVariable.png)
+     ![](en/assets/globalVariable.png)
 
 7. The last step is choosing a screen to open! Remember what the name of the screen for the first two minigames were? Minigame1 and Minigame2. This allows you to easily choose a random screen. Randomness will make your app feel different everytime.
 
 8. To choose a random minigame you need 3 blocks: `join` block from **Text** \(puts two texts together\), `random integer from [1] to [100]` block from **Math**, and   `get[]`from **Variables**. Put them together so they look like this:
 
-   ![](/assets/procedure.png)
+   ![](en/assets/procedure.png)
 
    * Note: this is also how all these steps put together should look.
 

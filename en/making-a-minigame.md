@@ -4,11 +4,11 @@
 
 3. The last thing you need is a clock **\(Palette > Sensors\)**. Click the clock in **Components**. Uncheck **Timer Enabled** and set **TimerInterval** to 3000.
 
-  ![](/assets/clockproperties.png)
+  ![](en/assets/clockproperties.png)
 
 4. Switch over to the **Blocks** view. You're going use the clock to see if the player can record a sound fast enough! Here's the blocks:
 
-   ![](/assets/startclock.png)
+   ![](en/assets/startclock.png)
 
    The `set [Clock1].[TimerEnabled] to` is in the **Clock1** blocks. the `[true]` block is in ** Logic**.
 
@@ -24,7 +24,7 @@
 
    Your blocks should look something like this:  
    
-   ![](/assets/soundrecordingminigame.png)
+   ![](en/assets/soundrecordingminigame.png)
 
 
 

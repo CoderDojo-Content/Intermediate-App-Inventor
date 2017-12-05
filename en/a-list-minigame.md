@@ -7,15 +7,15 @@
 
 4. Switch over to the **Blocks Viewer**. Add the `initialize global [name] to` block and change "name" to something more descriptive: "wordsList".
 
-5. there is a `make a list` block under **Lists**, drag that onto the **viewer**. Hit the ![](/assets/symbol.png) symbol and add some more items to the list. (I have 4 items, but you can use a different amount)
+5. there is a `make a list` block under **Lists**, drag that onto the **viewer**. Hit the ![](en/assets/symbol.png) symbol and add some more items to the list. (I have 4 items, but you can use a different amount)
 
 6. Now use the empty **Text** to fill the empty spots on the list. Write words in them. I used different types of pets! This is what mine looks like:
 
-    ![](/assets/petList.png)
+    ![](en/assets/petList.png)
     
 7. In the **ListPicker** blocks there is a `when [ListPicker1].BeforePicking` block and a `set [ListPicker1].[Elements] to` block. Put the blocks together. Now all you need to do is put the `get []` **Variables** block on and then the **ListPicker** is ready! It will look like this:
 
-    ![#](/assets/beforePicking.png)
+    ![#](en/assets/beforePicking.png)
 
 8. when the player picks a word you need to see if they chose the right word. You want to use the `when [ListPicker1].AfterPicking` block to check what word the player chose! Drag it onto the screen.
 
@@ -23,6 +23,6 @@
 
 10. Here's what it should look like:
 
-    ![](/assets/afterPicking.png)
+    ![](en/assets/afterPicking.png)
     
     Now just add a label to the screen that says "choose" + the word they need to pick to win!
