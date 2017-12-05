@@ -1,6 +1,6 @@
 1. This app is all about minigames! The first minigame were going to make will test your reflexes! Make a new screen named "Minigame1".
 
-2. Add a label to your screen and make the text says "Record a sound quickly" \(this is so the player knows what to do!\). Also add two buttons ("Record" and "Stop"). Under **\(Palette > Media\)** add a **SoundRecorder** to the screen.
+2. Add a label to your screen and make the text says "Record a sound quickly" \(this is so the player knows what to do!\). Also add two buttons ("Record" and "Stop"). Uncheck the **visible** option for the stop button. Under **\(Palette > Media\)** add a **SoundRecorder** to the screen.
 
 3. The last thing you need is a clock **\(Palette > Sensors\)**. Click the clock in **Components**. Uncheck **Timer Enabled** and set **TimerInterval** to 3000.
 
@@ -14,15 +14,17 @@
 
 5. Now the minigame just needs to decide if the player won or lost. If the player records a sound before the clock timer goes off they win! If they don't...they lose.
 
-6. Drag two `when [button].Click` blocks onto the screen. Then from the **SoundRecorder** put the `call SoundRecorder1.Start` in your "record" button and `call SoundRecorder1.Stop` in your "stop" button. 
+6. Drag two `when [button].Click` blocks onto the screen. 
 
-7. Use the `when [SoundRecorder1].StoppedRecording` block and inside that we want to stop the timer. Use the same blocks as before but switch "true" to "false". Then add a `close screen with value result` block with the **Text** "won".
+7. Then from the **SoundRecorder** put the `call SoundRecorder1.Start` in your "record" button. To make the stop button visible, use the `set [Button2].[Visible] to` from **Button2**.
 
-   From the **Clock1** blocks get the `when [Clock1].Timer` and put the `close screen with value result` and the **Text** "lost".
+8. For the "Stop" button add the `set [Clock1].TimerEnabled to` with the `[true]` block from **Logic**. `call SoundRecorder1.Stop`. Then all you need to do is use the `close screen with value result` block and use the **Text** "won".
+
+9. From the **Clock1** blocks get the `when [Clock1].Timer` and put the `close screen with value result` and the **Text** "lost".
 
    Your blocks should look something like this:  
    
-   ![](/assets/minigame1blocks.png)
+   ![](/assets/soundrecordingminigame.png)
 
 
 
