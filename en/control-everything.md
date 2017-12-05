@@ -14,7 +14,7 @@
 
    ![](/assets/else if.png)
 
-6. The first thing to check is whether a minigame closed or it was the home screen that closed. Using the ![](/assets/compare.png) from **Logic**. Checking if the `result` equals the text "HomeScreen" (Note: Remember the home screen ends with the result "HomeScreen").
+6. The first thing to check is whether a minigame closed or it was the home screen that closed. Using the `[] = []` block from **Logic**. Check if the `result` equals the text "HomeScreen" (Note: Remember the home screen ends with the result "HomeScreen").
 
 7. For the `then` part you want to play a minigame, because the only way the player got to **Screen1** from the home screen was pressing the play button. Remember the procedure you created? openMinigame? You can use that in this then. Make sure everything in your blocks looks right:
 
