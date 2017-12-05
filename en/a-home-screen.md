@@ -28,7 +28,7 @@
 
    ![](/assets/button1click.png)
 
-   That's it! You just stored the users input in the "player" file.
+      That's it! You just stored the users input in the "player" file.
 
 1. To finish up the block use the `call [TextBox].HideKeyboard` block from **TextBox1** and from **Control** the `close screen with value result` block. put a text block in with "HomeScreen". Like this:
 
