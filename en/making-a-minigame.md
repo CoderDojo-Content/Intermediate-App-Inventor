@@ -1,16 +1,12 @@
 1. This app is all about minigames! The first minigame were going to make will test your reflexes! Make a new screen named "Minigame1".
 
-2. Add a label to your screen and make the text say "Record a sound quickly" \(this is so the player knows what to do!\). Also add two buttons ("Record" and "Stop"). Uncheck the **visible** option for the stop button. Under **\(Palette > Media\)** add a **SoundRecorder** to the screen.
+2. Add a label to your screen and make the text say "Record a sound quickly" \(this is so the player knows what to do!\). Also add two buttons ("Record" and "Stop"). Uncheck the **visible** property for the stop button. Under **\(Palette > Media\)** add a **SoundRecorder** to the screen.
 
 3. The last thing you need is a clock **\(Palette > Sensors\)**. Click the clock in **Components**. Set **TimerInterval** to 3000 in its **Properties**.
 
   ![](/assets/clockproperties.png)
 
-4. Switch over to the **Blocks** view. You're going use the clock to see if the player can record a sound fast enough! Here's the blocks:
-
-   ![](/assets/startclock.png)
-
-   The `set [Clock1].[TimerEnabled] to` is in the **Clock1** blocks. the `[true]` block is in ** Logic**.
+4. Switch over to the **Blocks** view. You're going use the clock to see if the player can record a sound fast enough!
 
 5. Now the minigame just needs to decide if the player won or lost. If the player records a sound before the clock timer goes off they win! If they don't...they lose.
 
