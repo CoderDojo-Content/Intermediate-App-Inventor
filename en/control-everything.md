@@ -32,5 +32,7 @@
 
    ![](/assets/lost.png)
 
+10. You can try the app out now, but the score won't be working... You'll fix that on the next card!
+
 
 
