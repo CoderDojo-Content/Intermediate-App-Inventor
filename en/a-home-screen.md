@@ -30,9 +30,8 @@
 
       That's it! You just stored the users input in the "player" file.
 
-1. To finish up the block use the `call [TextBox].HideKeyboard` block from **TextBox1** and from **Control** the `close screen with value result` block. put a text block in with "HomeScreen". Like this:
+9. To finish up the block use the `call [TextBox].HideKeyboard` block from **TextBox1** and from **Control** the `close screen with value result` block. put a text block in with "HomeScreen". Like this:
 
    ![](/assets/finishedhomescreen.png)
 
-
-
+10. If you run your app on the emulator or your android device you can see what the home screen will look like.
