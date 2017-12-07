@@ -1,6 +1,5 @@
 1. Awesome, you have your first minigame! Making more minigames will keep your app interesting everytime someone plays it. So let's make a minigame that uses a **List**.
 
-
 2. A **List** is a bunch of items (variables) you store together. You can think about it like a grocery list. The list has oranges, apples, and grapes. They are items, but they're all on the same list because they're fruits.
 
 3. Add a screen called "Minigame2". You can use the **ListPicker** (**Palette > User Interface**) to have the user pick an item in a list. Add one to the screen.
