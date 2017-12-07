@@ -14,7 +14,7 @@
 
    * It should look like this:
 
-     ![](/assets/globalVariable.png)
+     ![](/assets/numberOfGames.png)
 
 7. The last step is choosing a screen to open! Remember what the name of the screen for the first two minigames were? Minigame1 and Minigame2. This allows you to easily choose a random screen. Randomness will make your app feel different everytime.
 
