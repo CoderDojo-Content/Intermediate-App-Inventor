@@ -26,6 +26,6 @@
 
  ![](/assets/testingminigame.png)
 
- Try out your game now! 
+ Try out your game now! The text at the top of the screen will change and tell you if you won or lost!
 
 
