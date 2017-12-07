@@ -1,4 +1,4 @@
-1. You can make a **Home Screen**. This can also be called the start or main screen. You can create your own home screen by add a new screen and naming what you like \(I chose "HomeScreen"\).
+1. A **Home Screen** can display information to your players. This can also be called the start or main screen. You can create your own home screen by add a new screen and naming what you like \(I chose "HomeScreen"\).
 
 2. Lets put some of your skills from the first tutorial to the test! Try adding three labels and a button to the screen. It would be neat if the first label was the name of your app!
 
@@ -8,7 +8,7 @@
 
 3. Lets do something new now! You can get user input with the  **TextBox** in **\(Palette &gt; User Interface\)**. Drag one onto your screen!
 
-4. You are going to have your player play a bunch of mini games, so you can keep track of how many games they win. Under **\(Palette &gt; Storage\)** drag a **File** onto the screen. The app will use this to keep track of the players score!
+4. You are going to have your player play a bunch of mini games, so you can keep track of how many games they win. Under **\(Palette &gt; Storage\)** drag a **File** onto the screen. The app will use this to keep track of the player's score!
 
 5. Make some final touches to your game's home screen. Here's what mine looks like:
 
