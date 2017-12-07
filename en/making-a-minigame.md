@@ -14,9 +14,9 @@
 
 7. Then from the **SoundRecorder** put the `call SoundRecorder1.Start` in your "record" button. To make the stop button visible, use the `set [Button2].[Visible] to` from **Button2**.
 
-8. For the "Stop" button add the `set [Clock1].TimerEnabled to` with the `[false]` block from **Logic**. `call SoundRecorder1.Stop`. Then all you need to do is use the `close screen with value result` block and use the **Text** "won".
+8. For the "Stop" button add the `set [Clock1].TimerEnabled to` with the `[false]` block from **Logic**. Use the `call [SoundRecorder1].Stop` (from **SoundRecorder1**) to stop the recording. Then all you need to do is use the `close screen with value result` block and use the **Text** "won".
 
-9. From the **Clock1** blocks get the `when [Clock1].Timer` and put the `close screen with value result` and the **Text** "lost".
+9. From the **Clock1** blocks get the `when [Clock1].Timer` and put the `close screen with value result` and the **Text** "lost". To make sure the recordings stopped add the `call [SoundRecorder1].Stop` here too. 
 
    Your blocks should look something like this:  
    
