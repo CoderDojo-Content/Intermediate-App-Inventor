@@ -7,4 +7,6 @@
 * [Procedures](procedures.md)
 * [Control Everything!](control-everything.md)
 * [Displaying the score!](wrapping-up.md)
+* [Wrapping up](wrapping-up.md)
+* [Displaying the Score](displaying-the-score.md)
 
