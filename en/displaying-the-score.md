@@ -1,4 +1,4 @@
-1. All that's left is to display the scores and have you create some more minigames!
+1. All that's left is to display the scores of the player who have played your game!
 
 2. To display the score you need to go back to Screen1's blocks. 
 

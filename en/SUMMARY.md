@@ -6,6 +6,6 @@
 * [A List Minigame](a-list-minigame.md)
 * [Procedures](procedures.md)
 * [Control Everything!](control-everything.md)
-* [Wrapping up](wrapping-up.md)
 * [Displaying the Score](displaying-the-score.md)
+* [Wrapping up](wrapping-up.md)
 
