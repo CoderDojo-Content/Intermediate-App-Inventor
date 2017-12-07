@@ -8,7 +8,7 @@
 
 3. To control the app, all this screen needs to do is check what screen just closed. So, Drag the `when [Screen1].OtherScreenClosed` block from **Screen1** onto the **Viewer**.
 
-4. When a minigame closes it results in a value. You can get this value inside the `when [Screen].OtherScreenClosed` block. To keep track of the player's score, you can use the `initialize local [name] to` block (in **Variables**). Change "name" to "score" so it's easy to remember. drag the `[0]` block from math onto the `initialize local [score] to` block. Here's what it should look like:
+4. When a minigame closes it results in a value. You can get this value inside the `when [Screen].OtherScreenClosed` block. To keep track of the player's score, you can use the `initialize local [name] to` block (in **Variables**). Change "name" to "score" so it's easy to remember. Drag the `[0]` block from math onto the `initialize local [score] to` block. Here's what it should look like:
 
    ![](/assets/otherscreenclose.png)
 
