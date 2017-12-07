@@ -31,4 +31,4 @@
     
     Now just add a label to the screen that says "choose" + the word they need to pick to win!
 
-13. To check if it's working you can do what you did in the last minigame, add the `set t 
+13. To check if it's working you can do what you did in the last minigame, add the `set [label1].[Text] to` and `[won]` or `[lost]`. Try this minigame out!
