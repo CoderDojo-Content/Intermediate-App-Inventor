@@ -22,5 +22,10 @@
    
    ![](/assets/soundrecordingminigame.png)
 
+10. If you want to try the minigame out now is just add the `set [Label1].Text to` block before you close the screen. add a the **Text** "won" or "lost" to the end of the block. Here's what mine looks like:
+
+ ![](/assets/testingminigame.png)
+
+ Try out your game now! 
 
 
