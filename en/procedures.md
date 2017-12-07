@@ -1,6 +1,6 @@
 1. The best way to make this app is by using a screen to control everything. Open Screen1 \(with the button on the top left\).
 
-2. The components this screen needs are a file **Storage** and a TinyDB **Storage**. Add these to the screen.
+2. The component this screen needs is a file **Storage**. Add one to the screen.
 
 3. Now, open up the blocks page for the screen. You're going to make your first procedure! A procedure is a bit of code that you can use with its "call" block. Most of the time coders will use these blocks so that they don't need to create the same code twice \(or even more\). These are the blocks we will use:
 
