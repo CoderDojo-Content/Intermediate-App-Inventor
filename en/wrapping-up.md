@@ -38,6 +38,7 @@ your app working! Now it is super easy for you to add your own minigames. I'll w
   * See if the player can tap a button 5 times in a second.
   
   * You can always make up your own games. Don't be afraid to get silly and try putting some blocks together!
+  
 
 
 

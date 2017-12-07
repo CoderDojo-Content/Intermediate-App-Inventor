@@ -20,3 +20,7 @@
 
 9. Amazing! Your game is ready to go! Make sure to try it out on an emulator or on your android device.
 
+10. You might notice a bug if you play enough times... the scores go off the screen! You can clear out old scores by adding a "clear scores" button to the homescreen, and when the player presses it, you delete the file. When the "clear scores" button is pressed, use the `call [File1].Delete` under your **Button**. It should look like this:
+
+    ![](/assets/deletefile.png)
+
