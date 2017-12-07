@@ -1,12 +1,14 @@
-1. You created all the parts for this app to work! Let's use these parts to make the app work.
+1. You created all the parts for this app to work! Let's use these parts to make the app fun.
 
 2. The screen that App Inventor always opens first is **Screen1**, but the player expects to see the home screen. So to open the home screen when the app starts you can use these blocks:
 
    ![](/assets/screen1initialize.png)
 
+   * Note: This might be named something different if you chose another name for your home screen.
+
 3. To control the app, all this screen needs to do is check what screen just closed. So, Drag the `when [Screen1].OtherScreenClosed` block from **Screen1** onto the **Viewer**.
 
-4. When a minigame closes it results in a value. You can get this value inside the `when [Screen].OtherScreenClosed` block. To keep track of the player's score, you can use the `initialize local [name] to` block. Change "name" to "score" so it's easy to remember. drag the `[0]` block from math onto the `initialize local [score] to` block. Here's what it should look like:
+4. When a minigame closes it results in a value. You can get this value inside the `when [Screen].OtherScreenClosed` block. To keep track of the player's score, you can use the `initialize local [name] to` block (in **Variables**). Change "name" to "score" so it's easy to remember. drag the `[0]` block from math onto the `initialize local [score] to` block. Here's what it should look like:
 
    ![](/assets/otherscreenclose.png)
 
