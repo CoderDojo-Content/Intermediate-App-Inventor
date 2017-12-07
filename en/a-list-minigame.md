@@ -19,10 +19,16 @@
 
 8. when the player picks a word you need to see if they chose the right word. You want to use the `when [ListPicker1].AfterPicking` block to check what word the player chose! Drag it onto the screen.
 
-9. Choose a word from your list (I chose bird from mine). use the `[] = []` block from **Logic**, a **Text** block, and the `[ListPicker].[Selection]` (the players choice) block from **ListPicker**. If the player's choice is right then close the screen with "won" else close with "lost".
+9. Choose a word from your list (I chose bird from mine). Back in the Designer, add a label and have it say "Choose <word>". <word> is whatever word you want them to choose!
 
-10. Here's what it should look like:
+10. Since were checking *if* the player chose the right word, you can use an if statement. Click the ![](/en/assets/symbol.png) symbol and add an else to the if.
+
+11. For the if, use the `[] = []` block from **Logic**, a **Text** block, and the `[ListPicker].[Selection]` (the players choice) block from **ListPicker**. If the player's choice is right then close the screen with "won" else close with "lost".
+
+12. Here's what it should look like:
 
     ![](/assets/afterPicking.png)
     
     Now just add a label to the screen that says "choose" + the word they need to pick to win!
+
+13. To check if it's working you can do what you did in the last minigame, add the `set t 
