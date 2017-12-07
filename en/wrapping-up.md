@@ -23,6 +23,7 @@ your app working! Now it is super easy for you to add your own minigames. I'll w
 
 9. You've done this step before, see if you can understand why you need to add these code blocks:
 
+  ![](/assets/finalminigamewinorlose.png)
 
 10. Just go back to Screen1 and make sure the `initialize [numberOfGames] to` block is set to the number of games you have (3 right now)! 
 
