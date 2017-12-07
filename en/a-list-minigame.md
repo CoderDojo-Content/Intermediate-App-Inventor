@@ -20,7 +20,7 @@
 
 9. Choose a word from your list (I chose bird from mine). Back in the Designer, add a label and have it say "Choose" + whatever word you want them to choose!
 
-10. Since were checking *if* the player chose the right word, you can use an if statement. Click the ![](/en/assets/symbol.png) symbol and add an else to the if.
+10. Since were checking *if* the player chose the right word, you can use an if statement. Click the ![](/assets/symbol.png) symbol and add an else to the if.
 
 11. For the if, use the `[] = []` block from **Logic**, a **Text** block, and the `[ListPicker].[Selection]` (the players choice) block from **ListPicker**. If the player's choice is right then close the screen with "won" else close with "lost".
 
