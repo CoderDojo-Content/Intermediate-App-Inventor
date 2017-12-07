@@ -22,7 +22,7 @@
 
    * Note: Remember the home screen ends with the result "HomeScreen".
 
-8. For the `then` part you want to play a minigame, because the only way the player got to **Screen1** from the home screen was pressing the play button. Remember the procedure you created? openMinigame? You can use that now. In **Procedures** there will now be a `call [openMinigame]` block, use that! You also need to use the `set [global score] to1 block to 0, or else so the game resets a new players score! Make sure everything in your blocks looks right:
+8. For the `then` part you want to play a minigame, because the only way the player got to **Screen1** from the home screen was pressing the play button. Remember the procedure you created? openMinigame? You can use that now. In **Procedures** there will now be a `call [openMinigame]` block, use that! You also need to use the `set [global score] to` block to 0, or else so the game resets a new players score! Make sure everything in your blocks looks right:
 
    ![](/assets/homescreenclose.png)
 
