@@ -1,6 +1,6 @@
 1. This app is all about minigames! The first minigame were going to make will test your reflexes! Make a new screen named "Minigame1".
 
-2. Add a label to your screen and make the text says "Record a sound quickly" \(this is so the player knows what to do!\). Also add two buttons ("Record" and "Stop"). Uncheck the **visible** option for the stop button. Under **\(Palette > Media\)** add a **SoundRecorder** to the screen.
+2. Add a label to your screen and make the text say "Record a sound quickly" \(this is so the player knows what to do!\). Also add two buttons ("Record" and "Stop"). Uncheck the **visible** option for the stop button. Under **\(Palette > Media\)** add a **SoundRecorder** to the screen.
 
 3. The last thing you need is a clock **\(Palette > Sensors\)**. Click the clock in **Components**. Uncheck **Timer Enabled** and set **TimerInterval** to 3000.
 
