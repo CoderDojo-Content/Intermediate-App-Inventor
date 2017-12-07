@@ -1,6 +1,4 @@
-
-
-10. You can always add more games yourself. Just remember to increase the number of games variable on Screen1!
+1. You can always add more games yourself. Just remember to increase the number of games variable on Screen1!
  
   Some ideas for games are:
   
