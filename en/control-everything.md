@@ -20,15 +20,15 @@
 
    * Note: Remember the home screen ends with the result "HomeScreen".
 
-7. For the `then` part you want to play a minigame, because the only way the player got to **Screen1** from the home screen was pressing the play button. Remember the procedure you created? openMinigame? You can use that in this then. Make sure everything in your blocks looks right:
+7. For the `then` part you want to play a minigame, because the only way the player got to **Screen1** from the home screen was pressing the play button. Remember the procedure you created? openMinigame? You can use that now. In **Procedures** there will now be a `call [openMinigame]` block, use that! Make sure everything in your blocks looks right:
 
    ![](/assets/homescreenclose.png)
 
-8. The two `else if`'s will check if the player won the last game or not. Remember when a minigame closes it results in the **Text** "won" or "lost". If they won, it adds 1 to their score and opens another minigame. You can use the `[] + []` block from **Math** and the score variable to add 1. Look in **Procedures** for the `call` block. 
+8. The two `else if`'s will check if the player won the last game or not. Remember when a minigame closes it results in the **Text** "won" or "lost". If they won, the app should add 1 to the player's score and open another minigame. You can use the `[] + []` block from **Math** and the score variable to add 1.
 
    ![](/assets/won.png)
 
-9. If they lost, it saves their score to the file and opens the home screen. To add the score to the player file use the `call File1.AppendToFile` block. Then you want to open the home screen Here's how the blocks look:
+9. If they lost, it saves their score to the file and opens the home screen. To add the score to the player file use the `call File1.AppendToFile` block (from **File1**). After the score is saved, open the home screen. Here's how the blocks look:
 
    ![](/assets/lost.png)
 
