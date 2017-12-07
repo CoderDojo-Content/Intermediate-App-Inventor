@@ -1,13 +1,13 @@
 1. Awesome, you have your first minigame! Making more minigames will keep your app interesting everytime someone plays it. So let's make a minigame that uses a **List**.
 
 
-2. A **List** is a bunch of items (variables) you store together. You can think about it like a grocery list. Groceries on the list are items, but they're all on the same list because they're related.
+2. A **List** is a bunch of items (variables) you store together. You can think about it like a grocery list. The list has oranges, apples, and grapes. They are items, but they're all on the same list because they're fruits.
 
 3. Add a screen called "Minigame2". You can use the **ListPicker** (**Palette > User Interface**) to have the user pick an item in a list. Add one to the screen.
 
 4. Switch over to the **Blocks Viewer**. Add the `initialize global [name] to` block and change "name" to something more descriptive: "wordsList".
 
-5. there is a `make a list` block under **Lists**, drag that onto the **viewer**. Hit the ![](/assets/symbol.png) symbol and add some more items to the list. (I have 4 items, but you can use a different amount)
+5. There is a `make a list` block under **Lists**, drag that onto the **viewer**. Hit the ![](/assets/symbol.png) symbol and add some more items to the list. (I have 4 items, but you can use a different amount)
 
 6. Now use the empty **Text** to fill the empty spots on the list. Write words in them. I used different types of pets! This is what mine looks like:
 
