@@ -1,6 +1,6 @@
-1. A **Home Screen** can display information to your players. This can also be called the start or main screen. You can create your own home screen by add a new screen and naming what you like \(I chose "HomeScreen"\).
+1. A **Home Screen** can display information to your players. This can also be called the start or main screen. You can create your own home screen by adding a new screen and naming what you like \(I chose "HomeScreen"\).
 
-2. Lets put some of your skills from the first tutorial to the test! Try adding three labels and a button to the screen. It would be neat if the first label was the name of your app!
+2. Lets put some of your skills from the first tutorial to the test! Try adding two labels and a button to the screen. It would be neat if the first label was the name of your app!
 
    Note: I like my home screen to be centered, so everything isn't on the left. You can do this too by clicking on your screen in the **Components** menu then under **Properties** switch **AlignHorizontal** to _Center: 3_.
 
@@ -30,8 +30,12 @@
 
       That's it! You just stored the users input in the "player" file.
 
-9. To finish up the block use the `call [TextBox].HideKeyboard` block from **TextBox1** and from **Control** the `close screen with value result` block. put a text block in with "HomeScreen". Like this:
+9. To finish up the block use the `call [TextBox].HideKeyboard` block from **TextBox1** and from **Control** the `close screen with value result` block. Attach a text block with "HomeScreen". Like this:
 
    ![](/assets/finishedhomescreen.png)
+
+10. Great! One last thing, you need to let the player see your homescreen. Currently the screen that App Inventor pens first is Screen1. To to open the home screen when the app starts you can use these blocks:
+
+   ![](/assets/screen1initialize.png)
 
 10. If you run your app on the emulator or your android device you can see what the home screen will look like.
