@@ -1,4 +1,4 @@
-1. A **Home Screen** can display information to your players. This can also be called the start or main screen. You can create your own home screen by adding a new screen and naming what you like \(I chose "HomeScreen"\).
+1. A **Home Screen** can display information to your players. This can also be called the start or main screen. You can create your own home screen by adding a new screen and naming it what you like \(I chose "HomeScreen"\).
 
 2. Lets put some of your skills from the first tutorial to the test! Try adding two labels and a button to the screen. It would be neat if the first label was the name of your app!
 
@@ -18,7 +18,7 @@
 
 6. Time to add some code to your home screen. Open the blocks editor on the top right of the browser window.
 
-7. You'll make the scoring display later, don't worry about it right now. Get the `when [button] .Click` code block and put a `call [file1].AppendToFile` block in it from **File1**.
+7. Get the `when [button] .Click` code block and put a `call [file1].AppendToFile` block in it from **File1**.
 
 8. Add a blank **Text** block to the fileName spot. Put "player" in the **Text** block. This file will keep track of information about the player. To get user input, the block you need will be under the **TextBox** and looks like this:
 
@@ -34,7 +34,7 @@
 
    ![](/assets/finishedhomescreen.png)
 
-10. Great! One last thing, you need to let the player see your homescreen. Currently the screen that App Inventor pens first is Screen1. To to open the home screen when the app starts you can use these blocks:
+10. Great! One last thing, you need to let the player see your homescreen. Currently the screen that App Inventor displays first is Screen1. To to open the home screen when the app starts you can use these blocks(In the Screen1 blocks section):
 
    ![](/assets/screen1initialize.png)
 

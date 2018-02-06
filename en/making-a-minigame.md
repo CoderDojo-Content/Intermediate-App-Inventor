@@ -1,8 +1,8 @@
-1. This app is all about minigames! The first minigame were going to make will test your reflexes! Make a new screen named "Minigame1".
+1. This app is all about minigames! The first minigame you are going to make will test your reflexes! Make a new screen named "Minigame1".
 
 2. Add a label to your screen and make the text say "Record a sound quickly" \(this is so the player knows what to do!\). Also add two buttons ("Record" and "Stop"). Uncheck the **visible** property for the stop button. Under **\(Palette > Media\)** add a **SoundRecorder** to the screen.
 
-3. The last thing you need is a clock **\(Palette > Sensors\)**. Click the clock in **Components**. Set **TimerInterval** to 3000 in its **Properties**.
+3. The last thing you need is a clock **\(Palette > Sensors\)**. Click the clock in **Components** and set **TimerInterval** to 3000 in its **Properties**.
 
   ![](/assets/clockproperties.png)
 
@@ -16,7 +16,7 @@
 
 8. For the "Stop" button add the `set [Clock1].TimerEnabled to` with the `[false]` block from **Logic**. Use the `call [SoundRecorder1].Stop` (from **SoundRecorder1**) to stop the recording. Then all you need to do is use the `close screen with value result` block and use the **Text** "won".
 
-9. From the **Clock1** blocks get the `when [Clock1].Timer` and put the `close screen with value result` and the **Text** "lost". To make sure the recordings stopped add the `call [SoundRecorder1].Stop` here too.
+9. From the **Clock1** blocks get the `when [Clock1].Timer`. In this put the `close screen with value result` block and the **Text** "lost". To make sure the recordings stopped add the `call [SoundRecorder1].Stop` block here too.
 
    Your blocks should look something like this:  
 
@@ -26,10 +26,10 @@
 
   ![](/assets/testingminigame.png)
 
-11. Brilliant! If you want to try the game out now you need to do one more thing. Go back to the **HomeScreen** and right click on the `close screen with value result` block. The click **Add comment**. Programmers often use this to make the computer ignore a bit of code.
+11. Brilliant! If you want to try the game out now you need to do one more thing. Go back to the **HomeScreen** and right click on the `close screen with value result` block. The click **Disable block**. Programmers often use this to make the computer ignore a bit of code.
 
-   ![](/assets/addingAComment.png)
+   ![](/assets/disablingABlock.png)
 
-12. Instead we want to show your new minigame. Just add the `open another screen screenName` block and attach it to a `""` block with "minigame1" in it.
+12. Instead you want to show your new minigame. Just add the `open another screen screenName` block and attach it to a `""` block with "minigame1" in it.
 
 13. Great, try out your game now! The text at the top of the screen will change and tell you if you won or lost!

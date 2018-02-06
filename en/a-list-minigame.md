@@ -8,7 +8,7 @@
 
 5. There is a `make a list` block under **Lists**, drag that onto the **viewer**. Hit the ![](/assets/symbol.png) symbol and add some more items to the list. (I have 4 items, but you can use a different amount)
 
-6. Now use the empty **Text** to fill the empty spots on the list. Write words in them. I used different types of pets! This is what mine looks like:
+6. Now use `""` blocks to fill the empty spots on the list. Write words in them. I used different types of pets! This is what mine looks like:
 
     ![](/assets/petList.png)
 
@@ -16,7 +16,7 @@
 
     ![#](/assets/beforePicking.png)
 
-8. when the player picks a word you need to see if they chose the right word. You want to use the `when [ListPicker1].AfterPicking` block to check what word the player chose! Drag it onto the screen.
+8. When the player picks a word, you need to see if they chose the right word. You want to use the `when [ListPicker1].AfterPicking` block to check what word the player chose! Drag it onto the screen.
 
 9. Choose a word from your list (I chose bird from mine). Back in the Designer, add a label and have it say "Choose" + whatever word you want them to choose!
 
@@ -30,4 +30,4 @@
 
 13. To check if it's working you can do what you did in the last minigame, add the `set [label1].[Text] to` and `[won]` or `[lost]`.
 
-14. You'll also need to change which screen opens when you click the "Play" button. Try and figure out how to do it! Then you can play your new minigame. 
+14. You'll also need to change which screen opens when you click the "Play" button. Try and figure out how to do it! Then you can play your new minigame.

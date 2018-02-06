@@ -3,15 +3,15 @@ your app working! Now it is super easy for you to add your own minigames. I'll w
 
 2. Create a "Minigame3" screen (for your fourth game change 3 to 4 and so on with every game you make).
 
-3. The game will see if the player can guess how much is being added to a number. So you need to add 2 labels, a TextBox, and a button in the **Designer**. here's how mine looks:
+3. The game will see if the player can guess how much is being added to a number. So you need to add 2 labels, a TextBox, and a button in the **Designer**. Here is how mine looks:
 
  ![](/assets/lastminigame.png)
 
-4. Swap over to the blocks viewer. Using a for each loop will make this game easier to code. A for each loop repeats the same code until its stopped. This is useful for us lazy programmers!
+4. Swap over to the blocks viewer. Using a **for each loop** will make this game easier to code. A for each loop repeats the same code until its stopped. This is useful for us lazy programmers!
 
-5. Use a `when Minigame3.Initialize` block and put an `initialize local [name] to` block in it. Set the variables name to "numbersText", and attach an empty `""` block to it.
+5. Use a `when Minigame3.Initialize` block and put an `initialize local [name] to` block in it. Set the variable's name to "numbersText", and attach an empty `""` block to it.
 
-6. Now add a `for each [number] from` block (it's in **Control**). The for block has 3 pieces. The first is what number to start at, the second is how high the loop will count before it stops, and the last is how much the loop goes up by every time (this is what your player needs to guess). Set the first block to 0, the next to 10, and the last to 2:
+6. Now add a `for each [number] from` block (it's in **Control**). This block has 3 pieces. The first is what number to start at, the second is how high the loop will count before it stops, and the last is how much the loop goes up by every time (this is what your player needs to guess). Set the first block to 0, the next to 10, and the last to 2:
 
   ![](/assets/forloop.png)
 
