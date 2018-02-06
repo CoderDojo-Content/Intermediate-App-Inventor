@@ -1,5 +1,5 @@
 1. You have all the control of
-your app working! Now it is super easy for you to add your own minigames. I'll walk you thorough adding one more game then you can try and make your own minigames!
+your app working! Now it is super easy for you to add your own minigames. I'll walk you through adding one more game then you can try and make your own minigames!
 
 2. Create a "Minigame3" screen (for your fourth game change 3 to 4 and so on with every game you make).
 

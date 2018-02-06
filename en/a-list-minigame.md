@@ -12,7 +12,7 @@
 
     ![](/assets/petList.png)
 
-7. In the **ListPicker** blocks there is a `when [ListPicker1].BeforePicking` block and a `set [ListPicker1].[Elements] to` block. Put the blocks together. Now all you need to do is put the `get []` **Variables** block on and then the **ListPicker** is ready! It will look like this:
+7. In the **ListPicker** blocks there is a `when [ListPicker1].BeforePicking` block and a `set [ListPicker1].[Elements] to` block. Put these blocks together. Now all you need to do is put the `get []` **Variables** block on and then the **ListPicker** is ready! It will look like this:
 
     ![#](/assets/beforePicking.png)
 
@@ -28,6 +28,6 @@
 
     ![](/assets/afterPicking.png)
 
-13. To check if it's working you can do what you did in the last minigame, add the `set [label1].[Text] to` and `[won]` or `[lost]`.
+13. To check if it's working you can do what you did in the last minigame. Add two `set [label1].[Text] to` bocks and attach them with either `[won]` or `[lost]`.
 
 14. You'll also need to change which screen opens when you click the "Play" button. Try and figure out how to do it! Then you can play your new minigame.

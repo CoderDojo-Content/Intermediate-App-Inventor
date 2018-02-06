@@ -12,9 +12,9 @@
 
    ![](/assets/else if.png)
 
-6. The first thing to check is whether a minigame closed or it was the home screen that closed. Using the `[] = []` block from **Logic**. Check if the `result` equals the text "HomeScreen"
+6. The first thing to check is whether a minigame closed or it was the home screen that closed. Use the `[] = []` block from **Logic**. Check if the `result` equals the text "HomeScreen"
 
-   * Note: Remember, you added this block at the start but then disabled it. Enabling it again so the the home screen will close with the result "HomeScreen".
+   * Note: Remember, you added this block at the start but then disabled it. Enable it again so that the home screen will close with the result "HomeScreen".
 
 7. For the `then` part you want to play a minigame, because the only way the player got to **Screen1** from the home screen was pressing the play button. Remember the procedure you created? openMinigame? You can use that now. In **Procedures** there will now be a `call [openMinigame]` block, use that! You also need to use the `set [global score] to` block to 0, so the game resets the players score! Make sure everything in your blocks looks right:
 

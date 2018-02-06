@@ -8,7 +8,7 @@
 
 3. Lets do something new now! You can get user input with the  **TextBox** in **\(Palette &gt; User Interface\)**. Drag one onto your screen!
 
-4. You are going to have your player play a bunch of mini games, so you can keep track of how many games they win. Under **\(Palette &gt; Storage\)** drag a **File** onto the screen. The app will use this to keep track of the player's score!
+4. You are going to have your player play a bunch of mini games, so you need to keep track of how many games they win. Under **\(Palette &gt; Storage\)** drag a **File** onto the screen. The app will use this to keep track of the player's score!
 
 5. Make some final touches to your game's home screen. Here's what mine looks like:
 
@@ -20,7 +20,7 @@
 
 7. Get the `when [button] .Click` code block and put a `call [file1].AppendToFile` block in it from **File1**.
 
-8. Add a blank **Text** block to the fileName spot. Put "player" in the **Text** block. This file will keep track of information about the player. To get user input, the block you need will be under the **TextBox** and looks like this:
+8. Add a blank **Text** block to the fileName spot. Put "player" in the **Text** block. This file will keep track of information about the player. To get the user's input, the block you need will be under the **TextBox** and looks like this:
 
    ![](/assets/text.png)
 
@@ -28,13 +28,13 @@
 
    ![](/assets/button1click.png)
 
-      That's it! You just stored the users input in the "player" file.
+      That's it! You just stored the user's input in the "player" file.
 
 9. To finish up the block use the `call [TextBox].HideKeyboard` block from **TextBox1** and from **Control** the `close screen with value result` block. Attach a text block with "HomeScreen". Like this:
 
    ![](/assets/finishedhomescreen.png)
 
-10. Great! One last thing, you need to let the player see your homescreen. Currently the screen that App Inventor displays first is Screen1. To to open the home screen when the app starts you can use these blocks(In the Screen1 blocks section):
+10. Great! One last thing, you need to let the player see your homescreen. Currently the screen that App Inventor displays first is Screen1. To open the home screen when the app starts you can use these blocks(In the Screen1 blocks section):
 
    ![](/assets/screen1initialize.png)
 

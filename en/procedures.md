@@ -16,7 +16,7 @@
 
      ![](/assets/numberOfGames.png)
 
-7. The last step is choosing a screen to open! Remember what the name of the screen for the first two minigames were? Minigame1 and Minigame2. This allows you to easily choose a random screen. Randomness will make your app feel different everytime.
+7. The last step is choosing a screen to open! Remember what the name of the screens for the first two minigames were? Minigame1 and Minigame2. This allows you to easily choose a random screen. Randomness will make your app feel different everytime.
 
 8. To choose a random minigame you need 4 blocks: `join` block from **Text** \(puts two texts together\), `random integer from [1] to [100]` block from **Math**, `get[]`from **Variables**, and a **Text** block that has "Minigame" in it. Put them together so they look like this:
 
