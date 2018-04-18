@@ -1,11 +1,11 @@
-# Summary
+# Inhoud
 
-* [Getting Setup](README.md)
-* [A Home Screen!](a-home-screen.md)
-* [Making a Minigame](making-a-minigame.md)
-* [A List Minigame](a-list-minigame.md)
+* [Configuratie](README.md)
+* [Een Beginscherm!](een-beginscherm.md)
+* [Een Minigame maken](een-minigame-maken.md)
+* [Een Minigame met lijsten](een-minigame-met-lijsten.md)
 * [Procedures](procedures.md)
-* [Control Everything!](control-everything.md)
-* [Displaying the Score](displaying-the-score.md)
-* [Wrapping up](wrapping-up.md)
+* [Controleer Alles!](controleer-alles.md)
+* [De Score tonen](de-score-tonen.md)
+* [Afsluiten](afsluiten.md)
 
