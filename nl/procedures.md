@@ -1,25 +1,21 @@
-1. The best way to make this app is by using a screen to control everything. Open Screen1 \(with the button on the top left\).
+1. De beste manier om deze app te maken is met behulp van een scherm dat alles controleert. Open Screen1.
 
-2. This screen also needs the **File** component. Add one to the screen.
+2. Dit scherm heeft ook een **Bestand** nodig, voeg er één toe.
 
-3. Now, open up the blocks page for the screen. You're going to make your first procedure! A procedure is a bit of code that you can use with its "call" block. Most of the time coders will use these blocks so that they don't need to create the same code twice \(or even more\). These are the blocks we will use:
+3. Ga naar de Blokken editor. Je gaat je eerste procedure maken! Een procedure is een stukje code dat je kunt gebruiken met het "roep aan" blok. Meestal zullen programmeurs deze blokken gebruiken zodat ze niet steeds dezelfde code moeten maken. Deze blokken gaan we gebruiken:  
+   ![](/nl/assets/AI14.jpg)
 
-   ![](/assets/procedures.png)
+4. Klik op **Procedures** aan de linkerkant en sleep het `tot [procedure]` blok in je scherm. Je gaat minigames openen met deze procedure, dus om je te helpen onthouden wat deze procedure doet, noem je het "openMinigame".
 
-4. Click **Procedures** on the left of the screen and drag over the `to [procedure]` block. You're going to open you minigames with this procedure, so to help remember what this procedure does you can rename it "openMinigame".
+5. Aangezien je een scherm opent, sleep je het **Controle** blok `open een ander scherm schermNaam` naar het **Procedure** blok.
 
-5. Since you're opening a screen, drag the **Control** block `open another screen screenName` into the **Procedure** block.
+6. Deze procedure gaat voor al jouw minigames werken. Sleep het blok `initializeer globaal [naam] `blok uit de **Variabelen** naar het scherm. Verander "naam" naar "aantalMinigames" \(zo weet je waar de variabele voor is\). Sleep het `[0]` blok erin en verander de 0 in 2 \(het aantal minigames dat je tot nu toe hebt\) en dan is deze variabele klaar.  
+   Het moet er zo uit zien:  
+   ![](/nl/assets/AI15.jpg)
 
-6. This procedure is going to work for your multiple minigames. Drag the `initalize global [name]` block from **Variables** on to the **Viewer**. Change "name" to "numberOfGames" \(this helps you remember what the variable is for\). Just drag the `[0]` block onto end of the variable and change 0 to 2 \(this is the number of minigames you have so far\) and this variable is ready to go!
+7. De laatste stap betreft het kiezen van een scherm! Weet je de namen van je eerste twee minigames nog? Minigame1 en Minigame2. Hierdoor kun je willekeurig een scherm kiezen. Door willekeur toe te voegen voelt je app elke keer anders aan.
 
-   * It should look like this:
+8. Om willekeurig een minigame te kiezen heb je vier blokken nodig: een `samenvoegen` blok uit **Tekst** \(dit voegt twee teksten samen\), `willekeurig getal tussen [1] en [100]` vanuit **Wiskunde**, een `krijg [ ]` blok uit **Variabelen** en een **Tekst**blok met de tekst "Minigame". Zet ze allemaal als volgt in elkaar:![](/nl/assets/AI16.jpg)
 
-     ![](/assets/numberOfGames.png)
 
-7. The last step is choosing a screen to open! Remember what the name of the screens for the first two minigames were? Minigame1 and Minigame2. This allows you to easily choose a random screen. Randomness will make your app feel different everytime.
 
-8. To choose a random minigame you need 4 blocks: `join` block from **Text** \(puts two texts together\), `random integer from [1] to [100]` block from **Math**, `get[]`from **Variables**, and a **Text** block that has "Minigame" in it. Put them together so they look like this:
-
-   ![](/assets/procedure.png)
-
-   * Note: this is also how all these steps put together should look.
