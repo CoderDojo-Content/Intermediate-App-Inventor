@@ -1,25 +1,25 @@
-1. All that's left is to display the scores of the player who have played your game!
+1. Nu moeten we alleen nog de score van de speler tonen die je games gespeeld heeft!
 
-2. To display the score you need to change some of Screen1's blocks.
+2. Om de score te tonen moet je een aantal blokken van Screen1 aanpassen.
 
-3. Down in the `call [File1].AppendToFile` block take the `get [score]` block off and replace it with a  **Text** `join` block.
+3. In het `aanroep [Bestand1].ToevoegenAanBestand `blok haal je het `krijg [global score] `blok weg en vervang je het door een **Tekst** `samenvoegen` blok.
 
-4. Hit the ![](/assets/symbol.png) symbol and drag another `string` over.
+4. Klik op het ![](/nl/assets/AI10.jpg) symbool en sleep er een` tekst` blok bij.
 
-5. put the `get [score]` back in the center and two empty **Text** blocks on the top and bottom.
+5. Zet het` krijg [global score] `blok in het midden en twee lege **Tekst **blokken bovenin en onderin.
 
-6. The top **Text** block is to add a space between the players name and the score. I used ": " as a spacer. Put "\n" in the last **Text** block. "\n" is how programmers tell the computer to hit "Enter" when it is displaying text. Here's what the blocks look like now:
+6. Het bovenste **Tekst** blok is om een spatie te plaatsen tussen de naam van de speler en de score. Ik heb ": " gebruikt. Zet "\n" in het laatste **Tekst** blok. "\n" is hoe programmeurs aan de computer vertellen om op "Enter" te klikken als het tekst laat zien. Zo ziet het blok er nu uit:  
+   ![](/nl/assets/AI22.jpg)
 
-    ![](/assets/fixedappendscore.png)
+7. In de Ontwerper van het Beginscherm voeg je nog een label toe en haal je daar alle tekst weg. Ga weer naar Blokken, voeg een `wanneer [Beginscherm].Initaliseer` blok toe. Vanuit **Bestand1** sleep het het `aanroep [Bestand1].LeesVan` blok toe en zet je er een **Tekst** blok in. De tekst moet zijn "speler".
 
-7. Back on the home screen designer, add another label and remove all the text form it. Now switch over to the blocks, add a `when [HomeScreen].Initialize` block. From **File1** drag the `call [file1].ReadFrom` block and put a **Text** block on that. Make it say "player".
+8. Goed! Je hebt de tekst gelezen. Nu moet je de tekst laten zien. Sleep het `wanneer [Bestand1].HeeftTekst `blok uit **Bestand1** naar je scherm. Vanuit **Label3** sleep je het `stel in [Label3].[Tekst] tot` blok daarin en zet je `krijg [tekst]` aan het eind. Zo moeten ze er uit zien:  
+   ![](/nl/assets/AI23.jpg)
 
-8. Great! You've read the text. Now you need to display it. Drag the `when [File1].GotText` block onto the screen from the **File1**. From **Label4** drag the `set [label4].[text] to` block into the previous block and put `get [text]` on the end. They should look like this:
+9. Geweldig! Je game is helemaal klaar om gebruikt te worden! Probeer het uit via de emulator of een Android apparaat.
 
-    ![](/assets/displayscore.png)
+10. Het kan zijn dat je een fout tegenkomt als je een tijdje speelt...de scores verdwijnen van het scherm! Je kunt oude scores weghalen door een "verwijder score" knop aan het beginscherm toe te voegen. Als de speler daarop drukt, wordt het bestand gewist. Als de "verwijder score" knop ingedrukt is, gebruik je het` aanroep [Bestand1].Verwijder `blok onder je **Knop**. Zo ziet het eruit:  
+    ![](/nl/assets/AI24.jpg)
 
-9. Amazing! Your game is ready to go! Make sure to try it out on an emulator or on your android device.
 
-10. You might notice a bug if you play enough times... the scores go off the screen! You can clear out old scores by adding a "clear scores" button to the homescreen, and when the player presses it, you delete the file. When the "clear scores" button is pressed, use the `call [File1].Delete` under your **Button**. It should look like this:
 
-    ![](/assets/deletefile.png)
