@@ -1,41 +1,39 @@
-1. A **Home Screen** can display information to your players. This can also be called the start or main screen. You can create your own home screen by adding a new screen and naming it what you like \(I chose "HomeScreen"\).
+1. Een **beginscherm** kan informatie aan de spelers tonen. Dit wordt ook wel een start- of hoofdscherm genoemd. Je kunt je eigen beginscherm maken door een nieuw scherm toe te voegen en het een naam te geven \(wij kiezen voor 'Beginscherm'\).
 
-2. Lets put some of your skills from the first tutorial to the test! Try adding two labels and a button to the screen. It would be neat if the first label was the name of your app!
+2. Wat weet je nog van de Beginner kaarten? Voeg twee labels en één knop toe aan het scherm. Geef het eerste label de naam van je app.
 
-   Note: I like my home screen to be centered, so everything isn't on the left. You can do this too by clicking on your screen in the **Components** menu then under **Properties** switch **AlignHorizontal** to _Center: 3_.
+   NB: wij vinden het fijn als het beginscherm gecentreerd is en niet alles helemaal links staat. Klik op je scherm in het **Componenten** menu, dan zet je onder **Eigenschappen** de **UitlijningHorizontaal** op _Midden:3_.
 
-   ![](/assets/center.PNG)
+3. Tijd voor iets nieuws! Je kunt input van de speler krijgen met het **TekstVak** \(**Palet &gt; Gebruikersomgeving**\). Sleep er één naar je scherm.
 
-3. Lets do something new now! You can get user input with the  **TextBox** in **\(Palette &gt; User Interface\)**. Drag one onto your screen!
+4. Je laat je speler verschillende minigames spelen, dus je moet gaan bijhouden hoeveel spelletjes ze winnen. Sleep een **Bestand** \(**Palet &gt; Opslag**\) naar je scherm. De app zal dit gebruiken om de score van de speler bij te houden!
 
-4. You are going to have your player play a bunch of mini games, so you need to keep track of how many games they win. Under **\(Palette &gt; Storage\)** drag a **File** onto the screen. The app will use this to keep track of the player's score!
+5. Maak je beginscherm wat netter. Zo ziet ons beginscherm eruit:  
+   ![](/nl/assets/AI1-1.jpg)
 
-5. Make some final touches to your game's home screen. Here's what mine looks like:
+   NB: dit is wat wij gedaan hebben, maar je kunt zelf je opmaak bepalen!
 
-   ![](/assets/homescreen.png)
+6. Hoog tijd om code toe te voegen aan beginscherm. Open de Blokken editor rechtsboven in je scherm.
 
-   Note: You can make your layout look however you want, this is just what I did!
+7. Zoek het `wanneer [Knop1]. Klik` blok en zet er een `aanroep [Bestand1]. ToevoegenAanBestand` blok in vanuit **Bestand1**.
 
-6. Time to add some code to your home screen. Open the blocks editor on the top right of the browser window.
+8. Voeg een blanco **Tekst** blok toe aan de bestandsNaam plaats. Zet "speler" in het **Tekst** blok. Dit bestand zal informatie over de speler bewaren. Om input van de speler te krijgen, zal het blok dat je nodig hebt onder het **Tekst** blok zitten en het ziet er zo uit:  
+   ![](/nl/assets/AI2.jpg)
 
-7. Get the `when [button] .Click` code block and put a `call [file1].AppendToFile` block in it from **File1**.
+   Sleep het naar de tekstplek:  
+   ![](/nl/assets/AI3.jpg)
 
-8. Add a blank **Text** block to the fileName spot. Put "player" in the **Text** block. This file will keep track of information about the player. To get the user's input, the block you need will be under the **TextBox** and looks like this:
+   Dat is het! Je hebt zojuist de input van de speler in het "speler"bestand opgeslagen.
 
-   ![](/assets/text.png)
+9. Om het blok af te maken gebruik je het `aanroep [TekstVak1]. VerbergToetsenbord` blok van **TekstVak1** en vanuit **Controle** het `sluit venster met waarde resultaat `blok. Zet een tekstblok met "Beginscherm" eraan vast. Zoals dit:
 
-   Put it in the text spot:
+   ![](/nl/assets/AI4.jpg)
 
-   ![](/assets/button1click.png)
+10. Prima! Nog één ding, je moet de speler het beginscherm laten zien. Op dit moment laat App Inventor als eerste Screen1 zien. Om het beginscherm te openen als de app opstart kun je deze blokken gebruiken \(in het Screen1 blokken gedeelte\):
 
-      That's it! You just stored the user's input in the "player" file.
+    ![](/nl/assets/AI5.jpg)
 
-9. To finish up the block use the `call [TextBox].HideKeyboard` block from **TextBox1** and from **Control** the `close screen with value result` block. Attach a text block with "HomeScreen". Like this:
+11. Als je je app via de emulator of Android apparaat uitvoert, kun je zien hoe je beginscherm eruit ziet.
 
-   ![](/assets/finishedhomescreen.png)
 
-10. Great! One last thing, you need to let the player see your homescreen. Currently the screen that App Inventor displays first is Screen1. To open the home screen when the app starts you can use these blocks(In the Screen1 blocks section):
 
-   ![](/assets/screen1initialize.png)
-
-10. If you run your app on the emulator or your android device you can see what the home screen will look like.
