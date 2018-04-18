@@ -1,33 +1,37 @@
-1. Awesome, you have your first minigame! Making more minigames will keep your app interesting everytime someone plays it. So let's make a minigame that uses a **List**.
+1. Cool, je hebt je eerste minigame gemaakt! Door meer minigames te maken houd je je app interessant voor de spelers. Dus nu gaan we een minigame maken dat gebruik maakt van een **Lijst**.
 
-2. A **List** is a bunch of items (variables) you store together. You can think about it like a grocery list. The list has oranges, apples, and grapes. They are items, but they're all on the same list because they're fruits.
+2. Een **Lijst** is eens tel objecten \(variabelen\) die je bij elkaar opslaat. Denk bijv. aan een boodschappenlijstje. Daarop staan sinaasappels, appels en druiven. Dit zijn objecten, maar ze staan allemaal in dezelfde lijst omdat ze fruit zijn.
 
-3. Add a screen called "Minigame2". You can use the **ListPicker** (**Palette > User Interface**) to have the user pick an item in a list. Add one to the screen.
+3. Voeg een scherm genaamd "Minigame2" toe. Je kunt de **LijstKiezer **\(**Palet &gt; Gebruikersomgeving**\) gebruiken om de speler een object in een lijst te laten kiezen. Voeg er één toe aan het scherm.
 
-4. Switch over to the **Blocks Viewer**. Add the `initialize global [name] to` block and change "name" to something more descriptive: "wordsList".
+4. Ga naar de **Blokken** editor. Voeg een `Initializeer globaal [naam] tot `blok toe en verander "naam" in iets beters: "woordenLijst".
 
-5. There is a `make a list` block under **Lists**, drag that onto the **viewer**. Hit the ![](/assets/symbol.png) symbol and add some more items to the list. (I have 4 items, but you can use a different amount)
+5. Er zit een `maak een lijst` blok onder **Lijsten**; zet het in het scherm. Klik op het symbool  
+   ![](/nl/assets/AI10.jpg)  
+   en voeg meer objecten toe aan de lijst \(wij hebben er vier, maar je mag het aantal zelf bepalen\).
 
-6. Now use `""` blocks to fill the empty spots on the list. Write words in them. I used different types of pets! This is what mine looks like:
+6. Gebruik nu " " blokken om de lege plekken te vullen. Zet er woorden in. Wij gebruiken diverse huisdieren. Zo ziet het er bij ons uit:  
+   ![](/nl/assets/AI11.jpg)
 
-    ![](/assets/petList.png)
+7. Bij de **LijstKiezer** blokken zit een `wanneer [LijstKiezer1].VoorKiezen `blok en een `stel in [LijstKiezer1].[Elementen] tot `blok. Zet ze er samen in. Nu hoef je alleen nog maar een `krijg []` **Variabelen** blok erin te zetten en is de **LijstKiezer** klaar! Het zal er zo uitzien:  
+   ![](/nl/assets/AI12.jpg)
 
-7. In the **ListPicker** blocks there is a `when [ListPicker1].BeforePicking` block and a `set [ListPicker1].[Elements] to` block. Put these blocks together. Now all you need to do is put the `get []` **Variables** block on and then the **ListPicker** is ready! It will look like this:
+8. Als de speler een woord kiest, moet je kunnen zien of ze het juiste woord hebben gekozen. Je wilt een `wanneer [LijstKiezer1].NaKiezen` blok hebben om na te kijken wel word de speler koos! Sleep het naar je scherm.
 
-    ![#](/assets/beforePicking.png)
+9. Kies een woord uit je lijst \(wij kozen Vogel uit de lijst\). Ga terug naar Ontwerper, voeg een label toe en verander de tekst naar "Kies" en het woord dat je wilt dat de speler kiest \(wij hebben "Kies een huisdier"\).
 
-8. When the player picks a word, you need to see if they chose the right word. You want to use the `when [ListPicker1].AfterPicking` block to check what word the player chose! Drag it onto the screen.
+10. Aangezien we nakijken _of_ de speler het juiste woord kiest, kun je een 'als dan' bepaling gebruiken. Klik op het  
+     ![](/nl/assets/AI10.jpg)   
+    symbool en voeg een 'anders' toe aan de 'als'.
 
-9. Choose a word from your list (I chose bird from mine). Back in the Designer, add a label and have it say "Choose" + whatever word you want them to choose!
+11. Voor als gebruik je een `[ ] = [ ]` blok uit **Logica**, een **Tekst**blok en het `[LijstKiezer1].[Selectie]` \(het spelersblok\) uit **LijstKiezer**. Als de speler juist kiest, wint hij; zo niet, dan verliest hij.
 
-10. Since were checking *if* the player chose the right word, you can use an if statement. Click the ![](/assets/symbol.png) symbol and add an else to the if.
+12. Zo zou het er nu uit moeten zien:  
+    ![](/nl/assets/AI13.jpg)
 
-11. For the if, use the `[] = []` block from **Logic**, a **Text** block, and the `[ListPicker].[Selection]` (the players choice) block from **ListPicker**. If the player's choice is right then close the screen with "won" else close with "lost".
+13. OM te zien of het werkt kun je hetzelfde doen als in de eerste Minigame. Voeg twee `stel in [Label1].[Tekst] tot `blokken toe en zet er `gewonnen` en `verloren` bij.
 
-12. Here's what it should look like:
+14. Je moet ook het scherm laten veranderen als er op de "Play" knop gedrukt wordt. Probeer het! Dan kun je je nieuwe minigame spelen.
 
-    ![](/assets/afterPicking.png)
 
-13. To check if it's working you can do what you did in the last minigame. Add two `set [label1].[Text] to` bocks and attach them with either `[won]` or `[lost]`.
 
-14. You'll also need to change which screen opens when you click the "Play" button. Try and figure out how to do it! Then you can play your new minigame.
