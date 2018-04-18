@@ -1,40 +1,38 @@
-1. You have all the control of
-your app working! Now it is super easy for you to add your own minigames. I'll walk you through adding one more game then you can try and make your own minigames!
+1. Jij hebt alle controle over de werking van je app! Nu is het heel makkelijk om je eigen minigames toe te voegen. We geven je nog een voorbeeld en daarna ga je zelf aan de slag.
 
-2. Create a "Minigame3" screen (for your fourth game change 3 to 4 and so on with every game you make).
+2. Maak een "Minigame3" scherm.
 
-3. The game will see if the player can guess how much is being added to a number. So you need to add 2 labels, a TextBox, and a button in the **Designer**. Here is how mine looks:
+3. Dit spel laat de speler raden naar een optelsom. Dus je hebt twee labels, één tekstblok en een knop nodig in de **Ontwerper**. Zo ziet die van ons eruit:  
+   ![](/nl/assets/AI25.jpg)
 
- ![](/assets/lastminigame.png)
+4. Ga naar Blokken. Gebruik een **voor elk lus** om het programmeren van het spel makkelijker te maken. Elke 'voor elk' lus herhaalt dezelfde code tot het stopgezet wordt. Dit is handig voor luie programmeurs!
 
-4. Swap over to the blocks viewer. Using a **for each loop** will make this game easier to code. A for each loop repeats the same code until its stopped. This is useful for us lazy programmers!
+5. Gebruik een `wanneer [Minigame3].Initialiseer `blok en zet daar een `Initialiseer lokaal [naam] tot` blok in. Verander "naam" in "getalTekst" en voeg een leeg `" "` blok toe.
 
-5. Use a `when Minigame3.Initialize` block and put an `initialize local [name] to` block in it. Set the variable's name to "numbersText", and attach an empty `""` block to it.
+6. Voeg nu een `voor elk [getal] van` blok toe \(in **Controle**\). Dit blok heeft drie delen. Het eerste is het getal waarmee begonnen moet worden; het tweede hoe lang de lus blijft tellen tot het stopt; en de laatste is hoeveel de lus elke keer optelt \(dit is wat de speler moet raden\). Zet het eerste blok op 0,  het tweede op 10, het laatste op 2:  
+   ![](/nl/assets/AI26.jpg)
 
-6. Now add a `for each [number] from` block (it's in **Control**). This block has 3 pieces. The first is what number to start at, the second is how high the loop will count before it stops, and the last is how much the loop goes up by every time (this is what your player needs to guess). Set the first block to 0, the next to 10, and the last to 2:
+7. Binnen de lus kun je nu iets gaafs doen! Gebruik het `zet [getalTekst] tot` blok. Je gaat het zetten op de vorige getalTekst en een spatie \(" "\) + het getal \(dit komt uit de voor lus\).
 
-  ![](/assets/forloop.png)
+8. Nu moet je tekst van het label naar `krijg [getalTekst] `zetten en moet alles er zo uit zien:  
+   ![](/nl/assets/AI27.jpg)
 
-7. Now inside the for loop you can actually do something cool! Use the `set [numbersText] to` block. You're going to set it to the previous numbersText + a space (" ") + the number (this comes from the for loop.
+9. Deze stap heb je al eerder gedaan, dus kijk of je begrijpt waarom deze blokken in de code moeten staan:  
+   ![](/nl/assets/AI28.jpg)
 
-8. Now you just got to set the label's text to the `get numbersText` block and everything should look like this:
+10. Ga terug naar Screen1 en zorg dat het `Initializeer globaal [aantalMinigames] tot` blok nu op 3 staat \(je hebt nu immers drie spellen!\)
 
- ![](/assets/finishedforloop.png)
+11. Zie je hoe makkelijk het was om een spel toe te voegen? Probeer deze ideeën eens uit:
 
-9. You've done this step before, see if you can understand why you need to add these code blocks:
+    * Bedenk zelf een spel \(dat is altijd leuker\).
 
-  ![](/assets/finalminigamewinorlose.png)
+    * Verander de lijst minigame. Laat het spel willekeurig een object uit de lijst kiezen, zeg de speler erop te klikken en kijk na of de speler de juiste keuze maakte.
 
-10. Just go back to Screen1 and make sure the `initialize [numberOfGames] to` block is set to the number of games you have (3 right now)!
+    * Probeer andere **Media** opties uit. Je kunt de speler vragen een foto van zichzelf te maken met de camerablokken.
 
-11. Do you see how easy it was to add a game? Try some of these ideas for games:
+    * Kijk of het de speler lukt om in één seconde vijf keer op een knop te drukken.
 
-  * First try to think of a game yourself (those are always more fun).
+    * Probeer van alles uit, gebruik je fantasie en probeer alle blokken!
 
-  * Change up the list minigame. Try to make the game select a random item in the list, tell the player to click it, and see if the player picked the right choice.
 
-  * Play around with other **Media** options. You can have the player take a picture of themselves with the camera blocks.
 
-  * See if the player can tap a button 5 times in a second.
-
-  * You can always make up your own games. Don't be afraid to get silly and try putting some blocks together!
