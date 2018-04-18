@@ -9,7 +9,7 @@
 4. Je laat je speler verschillende minigames spelen, dus je moet gaan bijhouden hoeveel spelletjes ze winnen. Sleep een **Bestand** \(**Palet &gt; Opslag**\) naar je scherm. De app zal dit gebruiken om de score van de speler bij te houden!
 
 5. Maak je beginscherm wat netter. Zo ziet ons beginscherm eruit:  
-   ![](/nl/assets/AI1-1.jpg)
+   ![](assets/AI1-1.jpg)
 
    NB: dit is wat wij gedaan hebben, maar je kunt zelf je opmaak bepalen!
 
@@ -18,20 +18,18 @@
 7. Zoek het `wanneer [Knop1]. Klik` blok en zet er een `aanroep [Bestand1]. ToevoegenAanBestand` blok in vanuit **Bestand1**.
 
 8. Voeg een blanco **Tekst** blok toe aan de bestandsNaam plaats. Zet "speler" in het **Tekst** blok. Dit bestand zal informatie over de speler bewaren. Om input van de speler te krijgen, zal het blok dat je nodig hebt onder het **Tekst** blok zitten en het ziet er zo uit:  
-   ![](/nl/assets/AI2.jpg)
+   ![](assets/AI2.jpg)
 
    Sleep het naar de tekstplek:  
-   ![](/nl/assets/AI3.jpg)
+   ![](assets/AI3.jpg)
 
    Dat is het! Je hebt zojuist de input van de speler in het "speler"bestand opgeslagen.
 
 9. Om het blok af te maken gebruik je het `aanroep [TekstVak1]. VerbergToetsenbord` blok van **TekstVak1** en vanuit **Controle** het `sluit venster met waarde resultaat `blok. Zet een tekstblok met "Beginscherm" eraan vast. Zoals dit:
-
-   ![](/nl/assets/AI4.jpg)
+   ![](assets/AI4.jpg)
 
 10. Prima! Nog één ding, je moet de speler het beginscherm laten zien. Op dit moment laat App Inventor als eerste Screen1 zien. Om het beginscherm te openen als de app opstart kun je deze blokken gebruiken \(in het Screen1 blokken gedeelte\):
-
-    ![](/nl/assets/AI5.jpg)
+    ![](assets/AI5.jpg)
 
 11. Als je je app via de emulator of Android apparaat uitvoert, kun je zien hoe je beginscherm eruit ziet.
 
