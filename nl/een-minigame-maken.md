@@ -1,35 +1,32 @@
-1. This app is all about minigames! The first minigame you are going to make will test your reflexes! Make a new screen named "Minigame1".
+1. Deze app gaat helemaal over minigames! De eerste minigame zal je reflexen testen. Maak een nieuw scherm met de naam "Minigame1".
 
-2. Add a label to your screen and make the text say "Record a sound quickly" \(this is so the player knows what to do!\). Also add two buttons ("Record" and "Stop"). Uncheck the **visible** property for the stop button. Under **\(Palette > Media\)** add a **SoundRecorder** to the screen.
+2. Voeg een label toe en verander de tekst naar "Neem snel een geluid op" \(zo weet de speler wat er verwacht wordt!\). Voeg ook twee knoppen "Opnemen" en "Stop" toe. Zet bij de Stopknop de** zichtbaarheid** uit. Via **Palet &gt; Media** voeg je een **GeluidsRecorder** toe aan je scherm.
 
-3. The last thing you need is a clock **\(Palette > Sensors\)**. Click the clock in **Components** and set **TimerInterval** to 3000 in its **Properties**.
+3. Nu heb je nog een klok \(**Palet &gt; Sensoren**\) nodig. Klik op de klok in **Componenten** en zet de **TimerInterval** op 3000 in de **Eigenschappen**.  
+   ![](/nl/assets/AI6.jpg)
 
-  ![](/assets/clockproperties.png)
+4. Ga nu naar de **Blokken** editor. De klok ga je gebruiken om te zien of de speler snel genoeg een geluid opneemt!
 
-4. Switch over to the **Blocks** view. You're going use the clock to see if the player can record a sound fast enough!
+5. Nu moet de minigame bepalen of de speler gewonnen of verloren heeft. Als de speler een geluid opneemt vóór het klokalarm afgaat wint de speler! Zo niet...dan verliest de speler.
 
-5. Now the minigame just needs to decide if the player won or lost. If the player records a sound before the clock timer goes off they win! If they don't...they lose.
+6. Sleep twee `wanneer [Knop].Klik` blokken naar het scherm.
 
-6. Drag two `when [button].Click` blocks onto the screen.
+7. Sleep dan vanuit GeluidsRecorder het `aanroep GeluidsRecorder1.Begin` in je "opnemen" knop. Om de stopknop zichtbaar te maken, pak je de `stel in [Knop2].Zichtbaar tot` vanuit **Knop2** en zet er een `waar` blok aan vast.
 
-7. Then from the **SoundRecorder** put the `call SoundRecorder1.Start` in your "record" button. To make the stop button visible, get the `set [Button2].[Visible] to` from **Button2** and attach it to a `True` block.
+8. Voor de Stopknop voeg je een `stel in [Klok1].Geactiveerd tot `met een `onwaar` blok uit **Logica** toe. Gebruik het blok `aanroep [Geluidsrecorder1].Stop` \(uit **GeluidsRecorder1**\) om de opname te stoppen. Nu hoef je alleen nog het `sluit venster met waarde resultaat` blok te gebruiken met een **Tekst**blok "gewonnen".
 
-8. For the "Stop" button add the `set [Clock1].TimerEnabled to` with the `[false]` block from **Logic**. Use the `call [SoundRecorder1].Stop` (from **SoundRecorder1**) to stop the recording. Then all you need to do is use the `close screen with value result` block and use the **Text** "won".
+9. Vanuit de **Klok1 **blokken pak je het `wanneer [Klok1].Timer` blok. Hier stop je het blok `sluit venster met waarde resultaat` in met een **Tekst**blok "verloren". Om er zeker van te zijn dat de opname gestopt wordt, sleep je hier ook het `aanroep[GeluidsRecorder1].Stop` blok heen. Je blokken zouden er nu zo uit moeten zien:  
+   ![](/nl/assets/AI7.jpg)
 
-9. From the **Clock1** blocks get the `when [Clock1].Timer`. In this put the `close screen with value result` block and the **Text** "lost". To make sure the recordings stopped add the `call [SoundRecorder1].Stop` block here too.
+10. Als je de minigame nu wilt uitproberen voeg je twee `stel in [Label1].Tekst tot` blokken toe. Voeg de **Tekst** "gewonnen" en de **Tekst** "verloren" toe aan de juiste blokken. Zo ziet het er bij ons uit:  
+    ![](/nl/assets/AI8.jpg)
 
-   Your blocks should look something like this:  
+11. Geweldig! Voor je de minigame uitprobeert moet je nog één ding doen. Ga terug naar **Beginscherm** en klik met rechts op het `sluit venster met waarde resultaat `blok. Klik dan op **Schakel Blok uit**. Programmeurs gebruiken dit vaak om de computer een stukje code te laten negeren.   
+    ![](/nl/assets/AI9-9.jpg)
 
-   ![](/assets/soundrecordingminigame.png)
+12. Want je wil je minigame tonen. Voeg het blok `open een ander scherm schermNaam` toe met een tekstblok "minigame1".
 
-10. If you want to try the minigame out now just add two `set [Label1].Text to` blocks before you close the screen. Add the **Text** "won" and the **Text** "lost" to the appropriate block. Here's what mine looks like:
+13. Wow! Probeer je spel nu uit! De tekst boven in het scherm zal veranderen en je vertellen of je gewonnen of verloren hebt!
 
-  ![](/assets/testingminigame.png)
 
-11. Brilliant! If you want to try the game out now you need to do one more thing. Go back to the **HomeScreen** and right click on the `close screen with value result` block. The click **Disable block**. Programmers often use this to make the computer ignore a bit of code.
 
-   ![](/assets/disablingABlock.png)
-
-12. Instead you want to show your new minigame. Just add the `open another screen screenName` block and attach it to a `""` block with "minigame1" in it.
-
-13. Great, try out your game now! The text at the top of the screen will change and tell you if you won or lost!
