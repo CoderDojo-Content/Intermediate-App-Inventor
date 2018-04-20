@@ -4,7 +4,7 @@
    * Hoe de speler input geeft
    * Introductie over lijsten
    * Een app die uit te breiden is met minigames
-   * Minigames toevoegen 9we geven je wat ideeën!\)
+   * Minigames toevoegen (we geven je wat ideeën!\)
 
 2. Voor je begint, heb je een account voor App Inventor nodig. Gebruik het account dat je bij de Beginner Sushi kaarten van App Inventor hebt aangemaakt. Heb je nog geen account, kijk dan hier: [http://kata.coderdojo.com/images/7/7b/App-inventor-beginner-dutch-nl.pdf](http://kata.coderdojo.com/images/7/7b/App-inventor-beginner-dutch-nl.pdf)
 

@@ -22,7 +22,7 @@
 
 10. Aangezien we nakijken _of_ de speler het juiste woord kiest, kun je een 'als dan' bepaling gebruiken. Klik op het  
      ![](assets/AI10.jpg)   
-    symbool en voeg een 'anders' toe aan de 'als'.
+    symbool en voeg een 'else' (= anders) toe aan de 'als'.
 
 11. Voor als gebruik je een `[ ] = [ ]` blok uit **Logica**, een **Tekst**blok en het `[LijstKiezer1].[Selectie]` \(het spelersblok\) uit **LijstKiezer**. Als de speler juist kiest, wint hij; zo niet, dan verliest hij.
 
