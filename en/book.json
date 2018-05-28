@@ -1,0 +1,17 @@
+{
+    "title":"Intermediate App Inventor",
+    "language":"en",
+    "variables":{
+        "seriesTitle": "Intermediate App Inventor"
+    },
+    "direction":"ltr",
+    "pdf":{
+        "paperSize":"a4",
+        "margin":{
+            "top": 100,
+            "left": 0,
+            "right": 0,
+            "bottom": 35
+        }
+    }
+}
